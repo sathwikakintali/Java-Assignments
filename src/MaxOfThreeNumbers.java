@@ -6,22 +6,16 @@ public class MaxOfThreeNumbers {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        int a = scanner.nextInt();
 
         System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        int b = scanner.nextInt();
 
         System.out.print("Enter the third number: ");
-        int num3 = scanner.nextInt();
+        int c = scanner.nextInt();
 
         // Find the maximum of the three numbers
-        int max = num1;
-        if (num2 > max) {
-            max = num2;
-        }
-        if (num3 > max) {
-            max = num3;
-        }
+        int max = (a>b)?((a>c)?a:c):((b>c)?b:c);
 
         System.out.println("Maximum of the three numbers: " + max);
 
